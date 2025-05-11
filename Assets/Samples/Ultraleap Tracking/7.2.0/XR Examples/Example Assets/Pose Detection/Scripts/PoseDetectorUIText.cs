@@ -25,12 +25,14 @@ namespace Leap.Examples
             if (detectedPose != null)
             {
                 textGameobject.SetActive(true);
-                text.text = "Detected pose: " + detectedPose.name;
+                text.text = "Pose yang terdeteksi: " + detectedPose.name;
+                Debug.Log("Pose terdeteksi: " + detectedPose.name);
             }
             else
             {
-                textGameobject.SetActive(false);
-                text.text = "No pose detected";
+                textGameobject.SetActive(true);
+                text.text = "Belum ada pose yang terdeteksi";
+                Debug.Log("No pose.");
             }
         }
     }
