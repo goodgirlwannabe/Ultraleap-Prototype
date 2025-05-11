@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{67DF92B4-1572-CEEF-4CD7-395ADED68ED8}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ultraleap.PhysicalHandsExamples.Editor" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="TextMesh Pro" expanded="True">
+                <Node name="Examples &amp; Extras" expanded="True">
+                  <Node name="Resources" expanded="True" />
+                </Node>
+                <Node name="Resources" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Ultraleap.PhysicalHandsExamples.Editor PreferredExecutionTarget="9b0611e0-07c0-4368-9627-7fe80a496112" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

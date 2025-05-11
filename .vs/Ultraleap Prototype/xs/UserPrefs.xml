@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{C4207FD7-3567-285D-79F2-042D5DBD9595}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/LineGraphManager.cs">
+    <Files>
+      <File FileName="Assets/Scenes/LoginManager.cs" Line="38" Column="41" />
+      <File FileName="Assets/Scenes/WeekStreakManager.cs" />
+      <File FileName="Assets/Scenes/DayUI.cs" />
+      <File FileName="Assets/Scenes/LineGraphManager.cs" Line="18" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ultraleap Prototype" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Samples" expanded="True">
+                <Node name="Ultraleap Tracking" expanded="True">
+                  <Node name="7.2.0" expanded="True">
+                    <Node name="XR Examples" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Scenes" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e751c0d-5397-44f2-a3d8-9617c3b5b14f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
