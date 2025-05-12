@@ -416,6 +416,8 @@
 "Assets/Scenes/DayUI.cs"
 "Assets/Scenes/LineGraphManager.cs"
 "Assets/Scenes/LoginManager.cs"
+"Assets/Scenes/ModulFeature/Logging.cs"
+"Assets/Scenes/SceneLoader.cs"
 "Assets/Scenes/Statistik.cs"
 "Assets/Scenes/WeekStreakManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
