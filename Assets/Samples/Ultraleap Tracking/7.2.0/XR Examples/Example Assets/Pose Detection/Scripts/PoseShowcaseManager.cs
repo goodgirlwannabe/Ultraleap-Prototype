@@ -31,6 +31,7 @@ namespace Leap.Examples
 
         private void Start()
         {
+            Debug.Log("Start from PoseShowcaseManager");
             for (int i = 0; i < poseList.Count; i++)
             {
                 var pose = poseList[i];
@@ -54,6 +55,7 @@ namespace Leap.Examples
 
         private void TurnOnGreenLight(string inputString)
         {
+            Debug.Log("TurnOnGreenLight: " + inputString);
             foreach (var pose in poseList)
             {
                 if (string.Equals(inputString, pose.poseName, StringComparison.OrdinalIgnoreCase))
