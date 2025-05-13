@@ -35,7 +35,6 @@ public class BelajarMechanism : MonoBehaviour
             // Deactivate all children initially
             childObjects[i].SetActive(false);
         }
-        
         // Activate only the first child if we have any children
         if (childObjects.Length > 0)
         {
@@ -49,12 +48,30 @@ public class BelajarMechanism : MonoBehaviour
         
     }
 
+    // public void ActivateAllChildren()
+    // {
+    //     Debug.Log("Activate all children");
+    //     // Activate all child objects
+    //     foreach (GameObject child in childObjects)
+    //     {
+    //         foreach (GameObject childchild in child){
+    //             Debug.Log("Checking child: " + childchild.name);
+    //             if (childchild.name == "GhostHands")
+    //             {
+    //                 Debug.Log("Activated");
+    //                 childchild.SetActive(true); // Set each child to active
+    //             }
+    //         }
+    //     }
+    // }
+
+
     // Call this method from a button's OnClick event
     public void NextObject()
     {
-        Debug.Log("NextObject");
+        Debug.Log("current active index: " + currentActiveIndex);
         // Deactivate current object
-        if (childObjects.Length > 0)
+        if (childObjects.Length > 0 && currentActiveIndex < childObjects.Length-1)
         {
             childObjects[currentActiveIndex].SetActive(false);
             
@@ -63,6 +80,10 @@ public class BelajarMechanism : MonoBehaviour
             
             // Activate new current object
             childObjects[currentActiveIndex].SetActive(true);
+        } 
+        else 
+        {
+            EndModule();
         }
     }
     
@@ -96,5 +117,10 @@ public class BelajarMechanism : MonoBehaviour
             // Activate new current object
             childObjects[currentActiveIndex].SetActive(true);
         }
+    }
+
+    // Selesai
+    public void EndModule(){
+        Debug.Log("End of Module");
     }
 }
