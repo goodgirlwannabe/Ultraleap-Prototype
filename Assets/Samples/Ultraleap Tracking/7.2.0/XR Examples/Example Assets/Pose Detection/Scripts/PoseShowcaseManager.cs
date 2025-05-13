@@ -87,7 +87,7 @@ namespace Leap.Examples
                 }
             }
 
-            detectionText.text = "No pose detected";
+            detectionText.text = "Belum ada pose yang terdeteksi";
         }
     }
 }
