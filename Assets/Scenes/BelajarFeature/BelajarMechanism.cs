@@ -48,22 +48,28 @@ public class BelajarMechanism : MonoBehaviour
         
     }
 
-    // public void ActivateAllChildren()
-    // {
-    //     Debug.Log("Activate all children");
-    //     // Activate all child objects
-    //     foreach (GameObject child in childObjects)
-    //     {
-    //         foreach (GameObject childchild in child){
-    //             Debug.Log("Checking child: " + childchild.name);
-    //             if (childchild.name == "GhostHands")
-    //             {
-    //                 Debug.Log("Activated");
-    //                 childchild.SetActive(true); // Set each child to active
-    //             }
-    //         }
-    //     }
-    // }
+    public void ActivateAllChildren()
+    {
+        Debug.Log("Activate all children");
+        // Iterate through all child objects in the childObjects array
+        foreach (GameObject child in childObjects)
+        {
+            // Iterate through the sub-children of each child
+            foreach (Transform subChild in child.transform) // Using Transform to access child objects
+            {
+                Debug.Log("Checking child: " + subChild.name);
+                if (subChild.name == "GhostHands")
+                {
+                    Debug.Log("Activated");
+                    subChild.gameObject.SetActive(true); // Set each sub-child to active
+                }
+                else
+                {
+                    subChild.gameObject.SetActive(true); // Optionally, activate other sub-children as well
+                }
+            }
+        }
+    }
 
 
     // Call this method from a button's OnClick event
