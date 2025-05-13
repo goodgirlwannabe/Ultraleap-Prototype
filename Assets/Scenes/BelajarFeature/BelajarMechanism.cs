@@ -17,6 +17,21 @@ public class BelajarMechanism : MonoBehaviour
         for (int i = 0; i < childCount; i++)
         {
             childObjects[i] = transform.GetChild(i).gameObject;
+
+            // Activate all sub-children of each child
+            for (int j = 0; j < childObjects[i].transform.childCount; j++)
+            {
+                GameObject child = childObjects[i].transform.GetChild(j).gameObject;
+                if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Challenge" && child.name == "GhostHands")
+                {
+                    child.SetActive(false);
+                }
+                else
+                {
+                    child.SetActive(true);
+                }
+            }
+
             // Deactivate all children initially
             childObjects[i].SetActive(false);
         }
