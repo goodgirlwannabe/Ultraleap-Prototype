@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 278124657}
   - component: {fileID: 278124656}
   - component: {fileID: 278124655}
+  - component: {fileID: 278124661}
   m_Layer: 0
   m_Name: NextButton
   m_TagString: Untagged
@@ -619,21 +620,9 @@ MonoBehaviour:
   OnButtonPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BelajarMechanism, Assembly-CSharp
-        m_MethodName: NextObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FotoController, Assembly-CSharp
-        m_MethodName: NextPhoto
+      - m_Target: {fileID: 278124661}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -758,6 +747,20 @@ Transform:
   - {fileID: 824437282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -0.38}
+--- !u!114 &278124661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278124654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff265f36607aa4a50b33565c62ba0e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: PilihModul
+  sceneIndex: 6
 --- !u!1 &375264483
 GameObject:
   m_ObjectHideFlags: 0
