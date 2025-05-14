@@ -417,6 +417,7 @@
 "Assets/Scenes/BelajarFeature/FotoController.cs"
 "Assets/Scenes/BelajarFeature/PlaqueBehaviour.cs"
 "Assets/Scenes/BelajarFeature/RotatingPose.cs"
+"Assets/Scenes/BelajarFeature/WebcamSetup.cs"
 "Assets/Scenes/DayUI.cs"
 "Assets/Scenes/LineGraphManager.cs"
 "Assets/Scenes/LoginManager.cs"
