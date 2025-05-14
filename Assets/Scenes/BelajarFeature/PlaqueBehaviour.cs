@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events; // For UnityEvent
 
 public class PlaqueBehaviour : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class PlaqueBehaviour : MonoBehaviour
     
     [Tooltip("Green color for correct state")]
     public Color correctColor = Color.green;
+
+    [Tooltip("Target GameObject to call the function on")]
+    public GameObject targetGameObject;  // Drag the GameObject here in the Inspector
+    
+    [Tooltip("The function to call on the target GameObject")]
+    public UnityEvent onCorrectEvent;  // This UnityEvent allows you to specify the function to call on the target GameObject
     
     // Start is called before the first frame update
     void Start()
@@ -32,12 +39,6 @@ public class PlaqueBehaviour : MonoBehaviour
         targetImage.color = startColor;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // Call this method to change the color to green (only if active)
     public void Correct()
     {
@@ -48,6 +49,12 @@ public class PlaqueBehaviour : MonoBehaviour
             {
                 targetImage.color = correctColor;
                 Debug.Log("PlaqueBehaviour: Changed to correct (green) color");
+
+                // Call the function assigned in the inspector via UnityEvent
+                if (onCorrectEvent != null)
+                {
+                    onCorrectEvent.Invoke(); // Invokes the event functions that are linked to the event in the Inspector
+                }
             }
             else
             {

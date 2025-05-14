@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using UnityEngine.SceneManagement;
 
 public class BelajarMechanism : MonoBehaviour
 {
     private GameObject[] childObjects;
     private int currentActiveIndex = 0;
+
+    // POP UP Management
+    // [SerializeField] string mainSceneName = "Challenge";
+    // [SerializeField] string overlaySceneName = "Popup";
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +53,14 @@ public class BelajarMechanism : MonoBehaviour
             
             // Activate new current object
             childObjects[currentActiveIndex].SetActive(true);
+<<<<<<< Updated upstream
+=======
+        } 
+        else 
+        {
+            EndModule();
+            // OpenPopUp();
+>>>>>>> Stashed changes
         }
     }
     
@@ -82,4 +95,17 @@ public class BelajarMechanism : MonoBehaviour
             childObjects[currentActiveIndex].SetActive(true);
         }
     }
+<<<<<<< Updated upstream
+=======
+
+    // Selesai
+    public void EndModule(){
+        Debug.Log("End of Module");
+    }
+
+    public void OpenPopUp(){
+        // SceneManager.LoadScene(overlaySceneName, LoadSceneMode.Additive);
+        Debug.Log("PopUp Opened");
+    }
+>>>>>>> Stashed changes
 }
