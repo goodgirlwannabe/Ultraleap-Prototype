@@ -11,6 +11,7 @@ public class Countdown : MonoBehaviour
     [SerializeField] TextMeshProUGUI warningText;
     private int countdownTime = 5; // Start countdown from 5
     private Coroutine countdownCoroutine; // To store the reference to the coroutine
+    private bool Completed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,14 @@ public class Countdown : MonoBehaviour
         
         // After countdown finishes, load the specified scene
         Debug.Log("scenetoload");
-        SceneManager.LoadScene(sceneToLoad);
+        if (!Completed){
+            SceneManager.LoadScene(sceneToLoad);
+        } else {
+            SceneManager.LoadScene("Statistik");
+        }
+    }
+
+    public void ModuleComplete(){
+        Completed = true;
     }
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Popup.unity
     guid: deed10992d7086f4a831b819bb563074
+  - enabled: 1
+    path: Assets/Scenes/Statistik.unity
+    guid: 95f683ae624155d48acef55fe1f69a4b
   m_configObjects: {}

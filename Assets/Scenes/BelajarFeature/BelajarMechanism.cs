@@ -53,14 +53,11 @@ public class BelajarMechanism : MonoBehaviour
             
             // Activate new current object
             childObjects[currentActiveIndex].SetActive(true);
-<<<<<<< Updated upstream
-=======
         } 
         else 
         {
             EndModule();
             // OpenPopUp();
->>>>>>> Stashed changes
         }
     }
     
@@ -95,8 +92,6 @@ public class BelajarMechanism : MonoBehaviour
             childObjects[currentActiveIndex].SetActive(true);
         }
     }
-<<<<<<< Updated upstream
-=======
 
     // Selesai
     public void EndModule(){
@@ -107,5 +102,4 @@ public class BelajarMechanism : MonoBehaviour
         // SceneManager.LoadScene(overlaySceneName, LoadSceneMode.Additive);
         Debug.Log("PopUp Opened");
     }
->>>>>>> Stashed changes
 }

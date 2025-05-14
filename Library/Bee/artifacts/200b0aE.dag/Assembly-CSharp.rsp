@@ -413,6 +413,7 @@
 "Assets/Samples/Ultraleap Tracking/7.2.0/XR Examples/Example Assets/Turntable and Pullcord/Scripts/Turntable/Turntable.cs"
 "Assets/Samples/Ultraleap Tracking/7.2.0/XR Examples/Example Assets/Turntable and Pullcord/Scripts/Turntable/TurntableVisuals.cs"
 "Assets/Scenes/BelajarFeature/BelajarMechanism.cs"
+"Assets/Scenes/BelajarFeature/Countdown.cs"
 "Assets/Scenes/BelajarFeature/FotoController.cs"
 "Assets/Scenes/BelajarFeature/PlaqueBehaviour.cs"
 "Assets/Scenes/BelajarFeature/RotatingPose.cs"
