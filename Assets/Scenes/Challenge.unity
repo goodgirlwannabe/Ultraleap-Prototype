@@ -8443,6 +8443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515ff4c8922ee4b49b4362a5c7a68a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 296262152}
 --- !u!1 &302394546
 GameObject:
   m_ObjectHideFlags: 0
