@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Challenge
-  sceneIndex: 3
+  sceneIndex: 6
 --- !u!114 &158909105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Challenge
-  sceneIndex: 3
+  sceneIndex: 6
 --- !u!1 &200541349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11893,7 +11893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Challenge
-  sceneIndex: 3
+  sceneIndex: 6
 --- !u!114 &715407811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13066,7 +13066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: PilihModul
-  sceneIndex: 8
+  sceneIndex: 2
 --- !u!114 &998530362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15632,7 +15632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Challenge
-  sceneIndex: 3
+  sceneIndex: 6
 --- !u!114 &1622674807
 MonoBehaviour:
   m_ObjectHideFlags: 0

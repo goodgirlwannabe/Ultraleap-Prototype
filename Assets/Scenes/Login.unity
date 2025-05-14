@@ -2096,7 +2096,7 @@ MonoBehaviour:
   passwordInput: {fileID: 1745933748}
   errorMessage: {fileID: 741120877}
   sceneName: TutorialAwal
-  sceneIndex: 7
+  sceneIndex: 1
 --- !u!4 &1077716697
 Transform:
   m_ObjectHideFlags: 0
