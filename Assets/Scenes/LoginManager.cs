@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class LoginManager : MonoBehaviour
 {
@@ -13,6 +15,12 @@ public class LoginManager : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI errorMessage;
+
+    [Tooltip("Name of the scene to load. Make sure it's added in Build Settings.")]
+    public string sceneName;
+
+    [Tooltip("Build index of the scene to load (overrides Name if >= 0).")]
+    public int sceneIndex = -1;
 
     private void Start()
     {
@@ -32,6 +40,12 @@ public class LoginManager : MonoBehaviour
         {
             Debug.Log("Login successful!");
             errorMessage.enabled = false;
+            if (sceneIndex >= 0)
+                SceneManager.LoadScene(sceneIndex);
+            else if (!string.IsNullOrEmpty(sceneName))
+                SceneManager.LoadScene(sceneName);
+            else
+                Debug.LogError("SceneLoader: No sceneName or valid sceneIndex set.");
         }
         else
         {
